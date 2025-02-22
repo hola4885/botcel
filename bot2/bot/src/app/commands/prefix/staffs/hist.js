@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require("discord.js");
 const { PrefixCommands } = require("@models");
-const Sanciones = require("./../../../../../../mongodb/models/sanciones");
-const nuevostaff = require("./../../../../../../mongodb/models/nuevostaff");
+const nuevostaff = require('../../../../../../../mongodb/models/nuevostaff'); // El modelo de tu base de datos
+const Sanciones = require("../../../../../../../mongodb/models/sanciones");
 
 class History extends PrefixCommands {
     constructor() {
