@@ -82,55 +82,59 @@ class regstaff extends ModalSubmit {
                     );
           
                 }
-        
-                const welcomeEmbed = new EmbedBuilder()
-                .setAuthor({
-                    name: `${user.tag}`,
-                    iconURL:user.displayAvatarURL({ dynamic: true })
-                })
-                .setTitle("🌟 ¡Bienvenido al canal ! 🌟")
-                .setDescription("Este canal ha sido creado específicamente para coordinar y gestionar las actividades del nuevo personal. A continuación, te explicamos cómo funciona este sistema:")
-                .addFields(
-                    {
-                        name: "🔎 **¿Cómo funciona el sistema?**",
-                        value: "En este canal encontrarás un botón que te permitirá acceder a un formulario. En este formulario deberás rellenar los siguientes datos del nuevo personal:\n\n- **ID Discord** (Nuevo Personal)\n- **Nombre** (MC)\n- **Cargo** (ROL)\n\nLuego de completarlo, podrás aceptar los datos con el botón correspondiente."
-                    },
-                    {
-                        name: "⚙️ **¿Qué sucede después de esto?**",
-                        value: "Al finalizar, se creará un canal personalizado para el personal asignado. Solo el nuevo personal y el equipo de **Sr.Mod** (o superiores) tendrán acceso a este canal."
-                    },
-                    {
-                        name: "💡 **¿Qué tiene de especial?**",
-                        value: "En este canal se sincronizarán:\n- Sanciones realizadas por el equipo personal.\n- Peticiones aceptadas del canal **〢📌┇petición-soporte**.\n- Acciones automáticas del bot (baneos, expulsiones, advertencias, muteos).\n\nEs un registro dedicado a cada personal para mantener todo organizado y centralizado."
-                    },
-                    {
-                        name: "📊 **¿Es un LOG?**",
-                        value: "Sí y no. Este canal registra las actividades, pero también incluye funciones adicionales:\n- Los **Sr.Mod** podrán revisar las acciones realizadas y, si corresponde, rechazarlas. Esto afecta directamente al puntaje del personal."
-                    },
-                    {
-                        name: "🏆 **Registro de puntaje**",
-                        value: "El sistema de puntaje permitirá penalizar al personal si una acción es rechazada por un **Sr.Mod**. Este sistema fomenta la precisión y la responsabilidad en las actividades del equipo."
-                    },
-                    {
-                        name: "⭐ **Ventajas del sistema**",
-                        value: "- Personal más sincronizado y ordenado.\n- Revisión más eficiente para el equipo **Sr.Mod**.\n- Mejor manejo general del equipo personal."
-                    }
-                )
-                .setColor(0x00AE86)
-                .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-                .setFooter({
-                    text: "Atentamente, Equipo de administración ⭐",
-                    iconURL: client.user.displayAvatarURL()
-                })
-                .setTimestamp();
+        const welcomeEmbed = new EmbedBuilder()
+    .setAuthor({
+        name: `${user.tag}`,
+        iconURL: user.displayAvatarURL({ dynamic: true })
+    })
+    .setTitle("🌟 ¡Bienvenido oficialmente al equipo de staff! 🌟")
+    .setDescription(`¡Felicidades, ${user.username}! Has sido seleccionado para unirte a nuestro equipo de staff. Este canal es tu espacio personal para coordinar, aprender y crecer en tu nuevo rol. Estamos emocionados de tenerte a bordo.`)
+    .addFields(
+        {
+            name: "📋 **Tu información registrada**",
+            value: `- **ID de Discord:** ${ids}\n- **Nombre:** ${descripcion}\n- **Cargo:** ${carg}\n\nSi encuentras algún error en esta información, por favor contacta a un administrador lo antes posible.`
+        },
+        {
+            name: "🔑 **Propósito de este canal**",
+            value: "Este canal es tu centro de operaciones. Aquí podrás:\n- Recibir asignaciones y tareas.\n- Registrar sanciones, peticiones y acciones realizadas.\n- Coordinar con el equipo de administración.\n- Resolver dudas y recibir feedback."
+        },
+        {
+            name: "📝 **Registro de actividades**",
+            value: "Todas tus acciones como staff (sanciones, peticiones aceptadas, etc.) se registrarán automáticamente aquí. Esto nos ayuda a mantener un historial transparente y organizado de tu trabajo."
+        },
+        {
+            name: "🏅 **Sistema de puntaje y evaluación**",
+            value: "Tu desempeño será evaluado mediante un sistema de puntaje. Cada acción que realices será revisada por el equipo de **Sr.Mod**. Si una acción es rechazada, afectará tu puntaje. ¡Esfuérzate por mantenerlo alto y demuestra tu compromiso!"
+        },
+        {
+            name: "💡 **Consejos para empezar**",
+            value: "- Familiarízate con las reglas del servidor.\n- Revisa los canales de recursos y guías para staff.\n- No dudes en preguntar si tienes dudas.\n- Mantén una comunicación clara y profesional."
+        },
+        {
+            name: "🚀 **Oportunidades de crecimiento**",
+            value: "Como parte del equipo de staff, tendrás la oportunidad de:\n- Desarrollar habilidades de liderazgo y gestión.\n- Ganar experiencia en moderación y administración.\n- Ascender en el equipo según tu desempeño."
+        },
+        {
+            name: "💬 **Comunicación y soporte**",
+            value: "Si necesitas ayuda o tienes alguna duda, puedes mencionar a un **Sr.Mod** en este canal. También puedes revisar los canales de soporte para staff en el servidor."
+        }
+    )
+    .setColor(0x00AE86) // Color verde, puedes cambiarlo según el tema del servidor
+    .setThumbnail(user.displayAvatarURL({ dynamic: true }))
+    .setFooter({
+        text: "Equipo de administración",
+        iconURL: client.user.displayAvatarURL()
+    })
+    .setTimestamp();
+          await channel.send({
+    embeds: [welcomeEmbed],
+    content: `👋 **¡Hola ${user}!**\n\n¡Bienvenido oficialmente al equipo de staff! 🎉\nEste canal ha sido creado exclusivamente para ti. Aquí encontrarás todo lo necesario para desempeñar tu rol de manera efectiva. Por favor, revisa la información anterior y si tienes alguna duda, no dudes en preguntar. ¡Estamos aquí para apoyarte en cada paso!\n\n¡Gracias por ser parte de nuestro equipo y por contribuir a hacer de este servidor un lugar mejor! 💪`
+}) .setTimestamp();
             
   
             
             
-            await channel.send({
-                embeds: [welcomeEmbed],
-                content: `👋 **¡Hola ${user}!**\nEste canal está listo para usarse. Por favor, sigue las instrucciones del mensaje para garantizar un flujo de trabajo eficiente.`
-            });
+    
             await int.reply({
                 content: `✅ Creado con exito <#${channel.id}>.`,
                 ephemeral: true,
