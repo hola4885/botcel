@@ -1,6 +1,5 @@
 const { SlashCommands } = require("@models");
 const { Client, EmbedBuilder, ChannelType } = require("discord.js");
-const configs = require('../../../../cnf/config.json');
 
 /**
  * Clase para representar el comando slash de valoración.

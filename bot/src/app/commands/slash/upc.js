@@ -1,6 +1,6 @@
 const { SlashCommands } = require("@models");
 const { Client, CommandInteraction, EmbedBuilder, ChannelType, channelMention } = require("discord.js");
-const schema = require('../../../../mongodb/models/join-to-create')
+const schema = require('../../../../../mongodb/models/join-to-create')
 /**
  * Clase para representar el comando slash de anuncio.
  * @extends SlashCommands
