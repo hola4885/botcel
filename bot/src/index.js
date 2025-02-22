@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { GatewayIntentBits, Partials } = require("discord.js");
 require("./paths");
-require("../mongodb/conexion/connect");
+require("../../mongodb/conexion/connect");
 
 process.stdout.write("\x1Bc");
 const Client = require("@client");
