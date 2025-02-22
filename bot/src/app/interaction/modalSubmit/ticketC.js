@@ -10,7 +10,7 @@ const {
   PermissionFlagsBits,
 } = require("discord.js");
 const { QuickDB } = require("quick.db");
-const admin = require("./../../../../mongodb/models/problemaA");
+const admin = require("./../../../../../mongodb/models/problemaA");
 
 const db = new QuickDB();
 

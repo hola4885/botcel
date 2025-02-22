@@ -1,6 +1,6 @@
 const { ModalSubmit } = require("@models");
 const { EmbedBuilder, ActionRowBuilder, TextInputStyle, ModalBuilder } = require("discord.js");
-const regp = require("./../../../../mongodb/models/problemaA");
+const regp = require("./../../../../../mongodb/models/problemaA");
 
 class Example extends ModalSubmit {
   constructor() {

@@ -2,7 +2,7 @@ const Client = require("@client");
 const { Events } = require("@models");
 const { ChannelType, Collection } = require("discord.js");
 let voiceManager = new Collection();
-const schema = require('../../../mongodb/models/join-to-create')
+const schema = require('../../../../mongodb/models/join-to-create')
 /**
  * Clase de ejemplo que representa un evento personalizado.
  * @extends Events

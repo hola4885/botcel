@@ -3,7 +3,7 @@ const { Buttons } = require("@models");
 const { ButtonInteraction, CacheType } = require("discord.js");
 const { ModalSubmitInteraction, EmbedBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle } = require("discord.js");
 const { QuickDB } = require("quick.db");
-const staff = require('./../../../../mongodb/models/problemaS');
+const staff = require('./../../../../../mongodb/models/problemaS');
 const db = new QuickDB();
 
 /**

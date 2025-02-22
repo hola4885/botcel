@@ -1,5 +1,5 @@
 const { Client } = require("discord.js");
-const admin = require("./../../../mongodb/models/problemaA");
+const admin = require("../../../../mongodb/models/problemaA");
 const { Events } = require("@models");
 
 class TicketCom extends Events {

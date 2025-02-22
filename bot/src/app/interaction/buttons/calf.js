@@ -9,7 +9,7 @@ const {
 } = require("discord.js");
 const Client = require("@client");
 const { Buttons } = require("@models");
-const regp = require("./../../../../mongodb/models/problemaA");
+const regp = require("./../../../../../mongodb/models/problemaA");
 
 /**
  * Clase para representar un ejemplo de botón interactivo.

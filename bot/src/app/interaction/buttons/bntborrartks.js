@@ -10,7 +10,7 @@ const {
 } = require("discord.js");
 const { QuickDB } = require("quick.db");
 const db = new QuickDB();
-const regp = require('./../../../../mongodb/models/problemaS');
+const regp = require('./../../../../../mongodb/models/problemaS');
 const config = require('../../../../cnf/config.json');
 
 class Example extends Buttons {

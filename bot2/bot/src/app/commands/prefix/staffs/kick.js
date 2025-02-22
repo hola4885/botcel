@@ -2,8 +2,8 @@ const Client = require("@client");
 const { PrefixCommands } = require("@models");
 const { Message } = require("discord.js");
 const mongoose = require('mongoose');
-const Sanciones = require("./../../../../../mongodb/models/sanciones");
-const nuevostaff = require("./../../../../../mongodb/models/nuevostaff");
+const Sanciones = require("./../../../../../../mongodb/models/sanciones");
+const nuevostaff = require("./../../../../../../mongodb/models/nuevostaff");
 
 class Kick extends PrefixCommands {
     constructor() {

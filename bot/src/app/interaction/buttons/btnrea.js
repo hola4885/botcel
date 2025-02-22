@@ -8,7 +8,7 @@ const {
 } = require("discord.js");
 const { QuickDB } = require("quick.db");
 const db = new QuickDB();
-const regp = require("./../../../../mongodb/models/problemaA");
+const regp = require("./../../../../../mongodb/models/problemaA");
 
 class ReopenTicket extends Buttons {
     constructor() {

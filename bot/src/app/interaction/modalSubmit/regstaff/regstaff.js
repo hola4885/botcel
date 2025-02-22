@@ -1,7 +1,7 @@
 const Client = require("@client");
 const { ModalSubmit } = require("@models");
 const { CacheType, ModalSubmitInteraction,EmbedBuilder } = require("discord.js");
-const nuevostaff = require('./../../../../../mongodb/models/nuevostaff');
+const nuevostaff = require('./../../../../../../mongodb/models/nuevostaff');
 const { QuickDB } = require("quick.db");
 
 const db = new QuickDB();

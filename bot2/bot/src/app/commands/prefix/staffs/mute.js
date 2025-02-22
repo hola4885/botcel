@@ -1,8 +1,8 @@
 const Client = require("@client");
 const { PrefixCommands } = require("@models");
 const { Message } = require("discord.js");
-const nuevostaff = require('./../../../../../mongodb/models/nuevostaff'); // El modelo de tu base de datos
-const Sanciones = require("./../../../../../mongodb/models/sanciones");
+const nuevostaff = require('./../../../../../../mongodb/models/nuevostaff'); // El modelo de tu base de datos
+const Sanciones = require("./../../../../../../mongodb/models/sanciones");
 
 /**
  * Comando para mutear a un usuario.

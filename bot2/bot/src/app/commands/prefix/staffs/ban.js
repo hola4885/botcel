@@ -2,8 +2,8 @@ const Client = require("@client");
 const { PrefixCommands } = require("@models");
 const { Message } = require("discord.js");
 const mongoose = require("mongoose");
-const nuevostaff = require('./../../../../../mongodb/models/nuevostaff'); // El modelo de tu base de datos
-const Sanciones = require("./../../../../../mongodb/models/sanciones");
+const nuevostaff = require('./../../../../../../mongodb/models/nuevostaff'); // El modelo de tu base de datos
+const Sanciones = require("./../../../../../../mongodb/models/sanciones");
 /**
  * Comando para banear a un usuario.
  * @extends PrefixCommands

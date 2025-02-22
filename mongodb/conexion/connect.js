@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const config = require('./cnf/config.json')
+const config = require('../../cnf/config.json')
 const colors = require('colors')
 
     mongoose.connect(config.MONGODB, {

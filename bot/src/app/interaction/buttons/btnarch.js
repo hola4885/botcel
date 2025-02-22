@@ -5,7 +5,7 @@ const {
     ButtonStyle,
     ChannelType,
 } = require("discord.js");
-const regp = require("./../../../../mongodb/models/problemaA");
+const regp = require("./../../../../../mongodb/models/problemaA");
 
 class ArchiveTicket extends Buttons {
     constructor() {

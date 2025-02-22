@@ -2,8 +2,8 @@ const ms = require("ms");
 const Client = require("@client");
 const { PrefixCommands } = require("@models");
 const { Message } = require("discord.js");
-const Sanciones = require("./../../../../../mongodb/models/sanciones");
-const nuevostaff = require("./../../../../../mongodb/models/nuevostaff");
+const Sanciones = require("./../../../../../../mongodb/models/sanciones");
+const nuevostaff = require("./../../../../../../mongodb/models/nuevostaff");
 class Tempban extends PrefixCommands {
     constructor() {
         super({
