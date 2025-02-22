@@ -1,0 +1,23 @@
+{
+  "name": "kinglyb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hola4885",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "better-sqlite3": "^11.8.1",
+    "colors": "^1.4.0",
+    "crypto": "^1.0.1",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7",
+    "import-fresh": "^3.3.0",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.9.5",
+    "quick.db": "^9.1.7"
+  }
+}
