@@ -6,6 +6,7 @@ const {
   ButtonBuilder,
 } = require("discord.js");
 const regp = require("./../../../../../mongodb/models/problemaA");
+const config = require('../../../../../cnf/config.json');
 
 class Example extends Buttons {
   constructor() {
